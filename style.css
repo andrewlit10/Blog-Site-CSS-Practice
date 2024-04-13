@@ -16,6 +16,7 @@ html {
   }
   body {
     font-size: 1.4rem;
+    min-height: 100vh;
   }
   main {
     max-width: 1200px;
@@ -30,7 +31,9 @@ nav, footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
+    
 }
+
 ul {
     display: flex;
     gap: 2rem;
@@ -106,7 +109,6 @@ section h4 {
     box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
     align-items: center;
     border: 1px solid #f3f2f2;
-    
     overflow: hidden;
     margin: 2rem 1rem;
 }
@@ -139,13 +141,19 @@ section h4 {
     padding: 10px;
     font-weight: 700;
 }
-
+footer {
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid darkgray;
+    background-color: white;
+}
 
 
 /* POST PAGE */
 
 
 .post {
+    min-height: 100vh;
     display: flex;
     margin: 0 10%;
     flex-direction: column;
@@ -171,4 +179,7 @@ section h4 {
 }
 .post article {
     padding: 30px 0;
+}
+.post footer {
+    padding-bottom: 0;
 }
